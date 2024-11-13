@@ -1,7 +1,7 @@
 Influencer Collaboration Recommendation
 Overview:
 
-Find the Best Collaboration Match: Based on influencer metrics like Followers, Engagement Rate, and Likes Avg., the script computes the best collaboration match using cosine similarity.
+Finds the Best Collaboration Match: Based on influencer metrics like Followers, Engagement Rate, and Likes Avg., the script computes the best collaboration match using cosine similarity.
 Compare Influencers: The script also allows users to compare two influencers by their Followers and Likes Avg. through a bar graph.
 
 Features
