@@ -1,24 +1,21 @@
-Influencer Collab matcher 
-Overview
-This Streamlit-based web application allows users to:
+Influencer Collaboration Recommendation
+Overview:
 
-Find the Best Collaboration Match: Based on metrics such as Followers, Engagement Rate, and Likes Avg., the app recommends the best collaboration match for a selected influencer.
-Compare Influencers: Users can compare two influencers side by side based on Followers and Likes Avg. metrics through a bar graph.
-The app uses machine learning (cosine similarity) to find the best match for influencers and visualize the comparisons between them.
+Find the Best Collaboration Match: Based on influencer metrics like Followers, Engagement Rate, and Likes Avg., the script computes the best collaboration match using cosine similarity.
+Compare Influencers: The script also allows users to compare two influencers by their Followers and Likes Avg. through a bar graph.
 
 Features
 1. Best Collaboration Match
-Given an influencer's Followers, Engagement Rate, and Likes Avg., the app computes the best collaboration match based on similarity scores.
-The app recommends a collaboration type based on the similarity score:
+Given the Followers, Engagement Rate, and Likes Avg., it computes a similarity score between influencers using cosine similarity.
+Based on the similarity score,it recommends a collaboration type:
 Joint Content: Similarity score >= 0.95
 Cross-promotion: Similarity score >= 0.85
 Shout-out: Similarity score < 0.85
 2. Influencer Comparison
-Users can compare two influencers' Followers and Likes Avg. values visually using a bar chart.
-This feature allows users to see a side-by-side comparison of the key metrics for two influencers of their choice.
-Technologies Used
-Python: The core language for the app.
-Streamlit: Used for creating the interactive web interface.
-Plotly: For generating dynamic and interactive bar charts.
-Pandas: For data manipulation and handling CSV file operations.
+Users can select two influencers to compare their Followers and Likes Avg. values.
+It will display a bar graph comparing the two influencers on these metrics.
+Technologies Used:
+Python: Core language used for data processing.
+Pandas: For handling and processing the CSV data.
 Scikit-learn: For calculating cosine similarity between influencer metrics.
+Plotly: To create an interactive bar chart for comparing influencers.
